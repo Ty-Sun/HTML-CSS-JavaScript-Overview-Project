@@ -1,0 +1,47 @@
+/* When an elements share certain tags, classes, IDs, etc, 
+   we can assign default styling attributes to them */
+
+/* Assigns characteristics to the entire html doc and the body */
+html, body {
+  	height: 100%;
+  	width: 100%;
+	  background: grey;
+}
+
+/* Assigns characteristics to elements with the id of onButton */
+#onButton {
+	color: lime;
+}
+
+/* Assigns characteristics to elements with the id of offButton */
+#offButton {
+	color: red;
+}
+
+/* Assigns characteristics to elements with the class of bulb-button */
+.bulb-button {
+	width: 8vw;
+	height: 5vw;
+	border: 4px solid white;
+	border-radius: 32px;
+	background: black;
+}
+
+/* Assigns characteristics to elements with the class of nav-button */
+.nav-button {
+  color: white;
+	width: 10vw;
+	height: 5vw;
+	border: 4px solid white;
+	background: black;
+}
+.navbar {
+  background: rgba(0,0,0,0);
+}
+/* Assigns characteristics to elements with the class of bulb-container */
+.bulb-container {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+

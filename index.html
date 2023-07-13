@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <!-- The head defines the metadata for an HTML page
+       For example we link our CSS styling file here -->
+	<head>
+		 <link rel="stylesheet" href="style.css">
+	</head>
+
+<!-- The body contains the main elements of our page-->
+	<body>
+    <!-- Contains navigation bar elements -->
+    <div class="navbar"">
+      <button class="nav-button" onclick="openTab('HTML')">HTML</button>
+      <button class="nav-button" onclick="openTab('CSS')">CSS</button>
+      <button class="nav-button" onclick="openTab('JavaScript')">JavaScript</button>
+    </div>
+    
+  <!-- ----------------------------------------------------------------- -->
+    
+    <!-- Our page with just HTML -->
+    <div id="HTML" class="language">
+      <h1>Let's start with some HTML!</h1>
+      <h2>(HyperText Markup Language)</h2>
+      <p>Places elements on our page. No functionality yet!</p>
+			
+      <button>On</button>
+			<img src="Images/pic_bulboff.gif">
+			<button>Off</button>
+    </div>
+    
+   <!-- ----------------------------------------------------------------- -->
+    
+    <!-- Adds some CSS styling -->
+    <div id="CSS" class="language" style="display:none">
+      <h1>Looks kind of boring. Time for some CSS!</h1>
+      <h2>(Cascading Style Sheets)</h2>
+      <p>Defines the style and orientation of elements.</p>
+      
+      <div class="bulb-container">
+			  <button class="bulb-button" style="color:lime">On</button>
+			  <img src="Images/pic_bulboff.gif" style="width:100px">
+			  <button class="bulb-button" style="color:red">Off</button>
+		  </div>
+    </div>
+    
+   <!-- ----------------------------------------------------------------- -->
+    
+    <!-- Adds some JavaScript functionality -->
+    <div id="JavaScript" class="language" style="display:none">
+      <h1>But it still doesn't DO anything...</h1>
+      <h2>Let's top it off with some JavaScript!</h2>
+      <p>Adds functionality  to bring our page to life!.</p>
+      
+      <div class="bulb-container">
+			  <button class="bulb-button" id="onButton">On</button>
+			  <img id="myImage" src="Images/pic_bulboff.gif" style="width:100px">
+			  <button class="bulb-button" id="offButton">Off</button>
+		  </div>
+    </div>
+    <script src="script.js"> </script>
+   <!-- ----------------------------------------------------------------- -->
+	</body>
+</html>
